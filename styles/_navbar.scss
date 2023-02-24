@@ -6,13 +6,14 @@
   margin: 0;
   font-family: "IBM Plex Sans Thai", sans-serif;
 }
-body {
-  background-image: url(/img/backgroundImage.avif);
+.home {
+  background-image: url(/img/landingpage.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
   height: 100vh;
 }
+
 span {
   color: #515e27;
   font-family: "Cinzel", serif;
@@ -79,9 +80,10 @@ span {
   font-size: 0.9em;
 }
 .bx {
-  margin-left: 15px;
   color: #515e27;
   font-size: 1.4em;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
   cursor: pointer;
 }
 
