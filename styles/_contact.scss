@@ -1,0 +1,142 @@
+.contact-form {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 140px;
+  h2,
+  p,
+  h4 {
+    font-family: $primaryFont;
+  }
+}
+
+.contact-form .contact-form-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 20px;
+    color: $secondaryColor;
+  }
+  .contact-form-left-info {
+    margin-top: 65px;
+  }
+  .wrapper {
+    display: flex;
+    margin-top: 20px;
+    .info {
+      margin-left: 30px;
+    }
+  }
+}
+
+.iconbackground {
+  @include flex(center, center);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $secondaryColor;
+  &:hover {
+    background-color: #515e2798;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+}
+
+.contact-form-right {
+  width: 50%;
+  @include flex(center, center);
+  // display: flex;
+  // justify-content: center;
+  .formwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    label,
+    input,
+    textarea,
+    .form-btn {
+      font-family: $primaryFont;
+    }
+    label {
+      color: $secondaryColor;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    input {
+      height: 30px;
+      padding: 5px;
+    }
+    .form-btn {
+      width: 90px;
+      margin: 30px 0px;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: $secondaryColor;
+      font-weight: bold;
+      border-radius: 15px;
+      border: 1px solid $primaryColor;
+      &:hover {
+        background-color: #515e2798;
+        color: $primaryColor;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+input:focus,
+textarea:focus {
+  background-color: #515e271f;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+    .contact-form-left {
+      width: 100%;
+      align-items: center;
+      .form-title {
+        text-align: center;
+      }
+      .form-text {
+        padding: 0px 50px;
+        text-align: center;
+      }
+    }
+    .contact-form-right {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-form {
+    .contact-form-left-info {
+      margin-top: 15px;
+      .wrapper {
+        flex-direction: column;
+        align-items: center;
+        h4,
+        p {
+          padding: 10px;
+        }
+        .info {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .contact-form-right {
+    margin-top: 70px;
+  }
+}
