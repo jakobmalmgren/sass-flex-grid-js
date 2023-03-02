@@ -1,0 +1,28 @@
+// colors
+$primaryColor: black;
+$secondaryColor: #515e27;
+$tertiaryColor: white;
+// fonts
+$primaryFont: "Cinzel", serif;
+$secondaryFont: "Poiret One", cursive;
+$tertiaryFont: "Amatic SC", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+// mixins
+@mixin flex($j-content, $a-items) {
+  display: flex;
+  justify-content: $j-content;
+  align-items: $a-items;
+}
+@mixin mediumScreen {
+  @media only screen and (max-width: 53.125rem) {
+    @content;
+  }
+}
+
+@mixin smallScreen {
+  @media only screen and (max-width: 34.375rem) {
+    @content;
+  }
+}

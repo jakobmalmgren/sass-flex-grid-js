@@ -2,7 +2,7 @@
   width: 85%;
   margin: 0 auto;
   display: flex;
-  margin-top: 140px;
+  margin-top: 8.75rem;
   h2,
   p,
   h4 {
@@ -15,30 +15,27 @@
   display: flex;
   flex-direction: column;
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: $secondaryColor;
   }
   .contact-form-left-info {
-    margin-top: 65px;
+    margin-top: 2.0625rem;
   }
   .wrapper {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     .info {
-      margin-left: 30px;
+      margin-left: 1.875rem;
     }
   }
 }
 
 .iconbackground {
   @include flex(center, center);
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 50%;
-  border: 1px solid $secondaryColor;
+  border: 0.0625rem solid $secondaryColor;
   &:hover {
     background-color: #515e2798;
     cursor: pointer;
@@ -49,8 +46,6 @@
 .contact-form-right {
   width: 50%;
   @include flex(center, center);
-  // display: flex;
-  // justify-content: center;
   .formwrapper {
     display: flex;
     flex-direction: column;
@@ -64,20 +59,20 @@
     label {
       color: $secondaryColor;
       font-weight: bold;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
     input {
-      height: 30px;
-      padding: 5px;
+      height: 1.875rem;
+      padding: 0.3125rem;
     }
     .form-btn {
-      width: 90px;
-      margin: 30px 0px;
-      padding: 5px 10px;
+      width: 5.62rem;
+      margin: 1.875rem 0rem;
+      padding: 0.31rem 0.625rem;
       cursor: pointer;
       color: $secondaryColor;
       font-weight: bold;
-      border-radius: 15px;
+      border-radius: 0.94rem;
       border: 1px solid $primaryColor;
       &:hover {
         background-color: #515e2798;
@@ -93,7 +88,9 @@ textarea:focus {
   background-color: #515e271f;
 }
 
-@media only screen and (max-width: 850px) {
+// ---mediaQuery---
+
+@include mediumScreen {
   .contact-form {
     flex-direction: column;
     align-items: center;
@@ -104,27 +101,27 @@ textarea:focus {
         text-align: center;
       }
       .form-text {
-        padding: 0px 50px;
+        padding: 0rem 3.125rem;
         text-align: center;
       }
     }
     .contact-form-right {
       width: 100%;
-      margin-top: 50px;
+      margin-top: 3.125rem;
     }
   }
 }
 
-@media only screen and (max-width: 550px) {
+@include smallScreen {
   .contact-form {
     .contact-form-left-info {
-      margin-top: 15px;
+      margin-top: 0.94rem;
       .wrapper {
         flex-direction: column;
         align-items: center;
         h4,
         p {
-          padding: 10px;
+          padding: 0.625rem;
         }
         .info {
           margin: 0;
@@ -137,6 +134,6 @@ textarea:focus {
     }
   }
   .contact-form-right {
-    margin-top: 70px;
+    margin-top: 4.375rem;
   }
 }
