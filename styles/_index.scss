@@ -28,6 +28,7 @@ body {
     color: $primaryColor;
     span {
       color: $secondaryColor;
+      font-weight: bold;
     }
   }
 }
@@ -110,7 +111,8 @@ body {
       text-align: center;
       span {
         font-size: clamp(1.4375rem, 6vw, 28.125rem);
-        color: $tertiaryColor;
+        color: $secondaryColor;
+        font-weight: bold;
       }
     }
     h1 {

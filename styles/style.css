@@ -45,6 +45,7 @@ body {
 
 .nav .nav-logo span {
   color: #515e27;
+  font-weight: bold;
 }
 
 .nav-wrapper {
@@ -159,7 +160,8 @@ body {
 
 .hero-page .hero-title h3 span {
   font-size: clamp(1.4375rem, 6vw, 28.125rem);
-  color: white;
+  color: #515e27;
+  font-weight: bold;
 }
 
 .hero-page .hero-title h1 {
@@ -643,7 +645,7 @@ body {
 }
 
 .iconbackground:hover {
-  background-color: #515e2798;
+  background-color: #515e2729;
   cursor: pointer;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -703,7 +705,7 @@ body {
 }
 
 .contact-form-right .formwrapper .form-btn:hover {
-  background-color: #515e2798;
+  background-color: #515e2729;
   color: black;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -711,7 +713,7 @@ body {
 
 input:focus,
 textarea:focus {
-  background-color: #515e271f;
+  background-color: #515e2729;
 }
 
 @media only screen and (max-width: 53.125rem) {

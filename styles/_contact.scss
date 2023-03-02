@@ -36,7 +36,7 @@
   border-radius: 50%;
   border: 0.0625rem solid $secondaryColor;
   &:hover {
-    background-color: #515e2798;
+    background-color: #515e2729;
     cursor: pointer;
     transition: 0.7s;
   }
@@ -74,7 +74,7 @@
       border-radius: 0.94rem;
       border: 1px solid $primaryColor;
       &:hover {
-        background-color: #515e2798;
+        background-color: #515e2729;
         color: $primaryColor;
         transition: 0.7s;
       }
@@ -84,7 +84,7 @@
 
 input:focus,
 textarea:focus {
-  background-color: #515e271f;
+  background-color: #515e2729;
 }
 
 // ---mediaQuery---
