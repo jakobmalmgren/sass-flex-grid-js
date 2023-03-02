@@ -6,10 +6,9 @@
   h2,
   p,
   h4 {
-    font-family: $primaryFont;
+    font-family: $secondaryFont;
   }
 }
-
 .contact-form .contact-form-left {
   width: 50%;
   display: flex;
@@ -54,7 +53,7 @@
     input,
     textarea,
     .form-btn {
-      font-family: $primaryFont;
+      font-family: $secondaryFont;
     }
     label {
       color: $secondaryColor;

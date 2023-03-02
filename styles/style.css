@@ -39,7 +39,7 @@ body {
 
 .nav .nav-logo {
   font-size: 1.2rem;
-  font-family: "Cinzel", serif;
+  font-family: "Poiret One", cursive;
   color: black;
 }
 
@@ -80,7 +80,6 @@ body {
   font-family: "Cinzel", serif;
   color: #515e27;
   font-size: 0.9rem;
-  font-weight: bolder;
   cursor: pointer;
 }
 
@@ -151,16 +150,21 @@ body {
 }
 
 .hero-page .hero-title h3 {
+  font-weight: 400;
   color: white;
-  font-size: 3.4rem;
-  font-weight: lighter;
+  font-size: clamp(1.4375rem, 8vw, 28.125rem);
   font-family: "Poiret One", cursive;
   text-align: center;
 }
 
+.hero-page .hero-title h3 span {
+  font-size: clamp(1.4375rem, 7vw, 28.125rem);
+  color: white;
+}
+
 .hero-page .hero-title h1 {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: clamp(0.95rem, 4vw, 3.125rem);
   color: white;
   font-family: "Poiret One", cursive;
   font-weight: lighter;
@@ -261,15 +265,6 @@ body {
     cursor: pointer;
     z-index: 1;
   }
-  .burger-menu .bar {
-    background-color: #515e27;
-  }
-  .hero-page .hero-title h3 {
-    font-size: 2.8rem;
-  }
-  .hero-page .hero-title h1 {
-    font-size: 1.5rem;
-  }
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -292,12 +287,6 @@ body {
   .footer .link-wrapper {
     display: block;
     margin-bottom: 60px;
-  }
-  .hero-page .hero-title h3 {
-    font-size: 1.4rem;
-  }
-  .hero-page .hero-title h1 {
-    font-size: 1rem;
   }
 }
 
@@ -349,10 +338,6 @@ body {
 .grid-container .layer:hover {
   cursor: pointer;
   opacity: 1;
-}
-
-.footer--exceptindex {
-  position: relative;
 }
 
 .grid-item1 {
@@ -607,7 +592,7 @@ body {
 .contact-form h2,
 .contact-form p,
 .contact-form h4 {
-  font-family: "Cinzel", serif;
+  font-family: "Poiret One", cursive;
 }
 
 .contact-form .contact-form-left {
@@ -692,7 +677,7 @@ body {
 .contact-form-right .formwrapper input,
 .contact-form-right .formwrapper textarea,
 .contact-form-right .formwrapper .form-btn {
-  font-family: "Cinzel", serif;
+  font-family: "Poiret One", cursive;
 }
 
 .contact-form-right .formwrapper label {
@@ -830,13 +815,18 @@ textarea:focus {
 .about-wrapper .about-text h2 {
   color: #515e27;
   text-align: center;
-  font-family: "Amatic SC", cursive;
+  font-family: "Poiret One", cursive;
   font-size: 2rem;
 }
 
 .about-wrapper .about-text p {
-  font-family: "Cinzel", serif;
+  font-family: "Poiret One", cursive;
   padding: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.footer--exceptindex {
+  position: relative;
 }
 
 footer .copyright-wrapper--color p {
@@ -862,8 +852,10 @@ footer .link-wrapper--color p {
   }
   .about-wrapper .about-text h2 {
     text-align: center;
+    font-size: 1.5rem;
   }
   .about-wrapper .about-text p {
+    font-size: 1.15rem;
     padding: 0.625rem;
     text-align: center;
   }
