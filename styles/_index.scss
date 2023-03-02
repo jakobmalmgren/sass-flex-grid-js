@@ -120,7 +120,7 @@ body {
   }
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -133,6 +133,7 @@ footer {
   .copyright-wrapper {
     width: 50%;
   }
+  
   .link-wrapper {
     width: 50%;
     @include flex(space-around, start);
@@ -209,7 +210,7 @@ footer {
     }
   }
 
-  footer {
+  .footer {
     flex-direction: column;
     text-align: center;
     @include flex(center, center);
@@ -217,7 +218,7 @@ footer {
 }
 
 @include smallScreen {
-  footer {
+  .footer {
     .link-wrapper {
       display: block;
       margin-bottom: 60px;

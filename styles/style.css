@@ -166,7 +166,7 @@ body {
   font-weight: lighter;
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -186,11 +186,11 @@ footer {
   padding: 0.625rem;
 }
 
-footer .copyright-wrapper {
+.footer .copyright-wrapper {
   width: 50%;
 }
 
-footer .link-wrapper {
+.footer .link-wrapper {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,13 +202,13 @@ footer .link-wrapper {
           align-items: start;
 }
 
-footer p {
+.footer p {
   font-family: "Cinzel", serif;
   font-weight: lighter;
   font-size: 0.625rem;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
   color: white;
 }
@@ -270,7 +270,7 @@ footer a {
   .hero-page .hero-title h1 {
     font-size: 1.5rem;
   }
-  footer {
+  .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -289,7 +289,7 @@ footer a {
 }
 
 @media only screen and (max-width: 34.375rem) {
-  footer .link-wrapper {
+  .footer .link-wrapper {
     display: block;
     margin-bottom: 60px;
   }
@@ -349,6 +349,10 @@ footer a {
 .grid-container .layer:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+.footer--exceptindex {
+  position: relative;
 }
 
 .grid-item1 {
