@@ -39,6 +39,7 @@ body {
 }
 .nav-menu {
   display: flex;
+  align-items: center;
   margin-left: 3.75rem;
 }
 .nav-menu.active {
@@ -60,7 +61,8 @@ body {
 }
 
 .nav-icons {
-  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
   .bx {
     color: $secondaryColor;
     font-size: 1.3rem;
