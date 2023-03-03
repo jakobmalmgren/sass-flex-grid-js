@@ -53,6 +53,7 @@ body {
     font-family: $primaryFont;
     color: $secondaryColor;
     font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
     &:hover {
       color: $primaryColor;
