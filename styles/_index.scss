@@ -24,7 +24,7 @@ body {
   }
   .nav-logo {
     font-size: 1.2rem;
-    font-family: $secondaryFont;
+    font-family: $primaryFont;
     color: $primaryColor;
     span {
       color: $secondaryColor;
@@ -107,7 +107,7 @@ body {
       font-weight: 400;
       color: $tertiaryColor;
       font-size: clamp(1.4375rem, 6vw, 28.125rem);
-      font-family: $secondaryFont;
+      font-family: $primaryFont;
       text-align: center;
       span {
         font-size: clamp(1.4375rem, 6vw, 28.125rem);
@@ -119,7 +119,7 @@ body {
       text-align: center;
       font-size: clamp(0.95rem, 3vw, 3.125rem);
       color: $tertiaryColor;
-      font-family: $secondaryFont;
+      font-family: $primaryFont;
       font-weight: lighter;
     }
   }
@@ -184,14 +184,13 @@ body {
         color: $secondaryColor;
       }
     }
-  }
-
-  .nav-icons {
-    padding: 1.25rem 0;
-    .bx {
-      color: $tertiaryColor;
-      &:hover {
-        color: $secondaryColor;
+    .nav-icons {
+      padding: 1.25rem 0;
+      .bx {
+        color: $tertiaryColor;
+        &:hover {
+          color: $secondaryColor;
+        }
       }
     }
   }

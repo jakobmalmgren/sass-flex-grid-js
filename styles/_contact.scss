@@ -2,11 +2,12 @@
   width: 85%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 8.75rem;
   h2,
   p,
   h4 {
-    font-family: $secondaryFont;
+    font-family: $primaryFont;
   }
 }
 .contact-form .contact-form-left {
@@ -53,7 +54,7 @@
     input,
     textarea,
     .form-btn {
-      font-family: $secondaryFont;
+      font-family: $primaryFont;
     }
     label {
       color: $secondaryColor;
@@ -91,7 +92,6 @@ textarea:focus {
 
 @include mediumScreen {
   .contact-form {
-    flex-direction: column;
     align-items: center;
     .contact-form-left {
       width: 100%;
